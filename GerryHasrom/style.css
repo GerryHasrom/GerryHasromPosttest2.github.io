@@ -1,0 +1,333 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #283f5f;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo h1 {
+  font-size: 24px;
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f1c40f;
+}
+
+.navbar-search {
+  margin-right: 20px;
+  position: relative;
+}
+
+#search {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: white;
+}
+
+.search-label i {
+  font-size: 18px;
+}
+
+#search:focus {
+  outline: none;
+}
+
+/* Untuk ikon pencarian */
+.fa-search:before {
+  content: "\f002"; 
+  font-family: FontAwesome;
+}
+
+/* Efek hover pada ikon pencarian */
+.search-label:hover {
+  color: #f1c40f;
+}
+
+/* Home */
+.home {
+  background-color: #ffffff; 
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-card {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7; 
+  z-index: -1;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); 
+  border-radius: 10px;
+}
+
+.card-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card-overlay p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Header */
+.header {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header-content {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.header p {
+  font-size: 18px;
+}
+
+/* About Me */
+.about {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  transition: transform 0.2s; 
+}
+
+.about-card:hover {
+  transform: translateY(-5px); 
+}
+
+.about-card img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.about-card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social Media */
+.social-media {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #555;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #007bff;
+}
+
+/* Isi Konten */
+.content {
+  background-color: #e6e6e6;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+.content-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(25% - 20px);
+  margin: 10px;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+}
+
+.content-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.content-card p {
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  background-color: #283f5f;
+  padding: 10px 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 60px; 
+  height: auto;
+}
+
+.footer-text {
+  color: #f1c40f;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+#added-text {
+  font-size: 16px;
+}
+
+/* Efek animasi pada harga */
+.animated-price {
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s; 
+}
+
+.animated-price:hover {
+  color: #f1c40f;
+}
+
+/* Media untuk Layar Kecil */
+@media screen and (max-width: 768px) {
+  .about-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Ukuran Teks pada Layar Kecil */
+@media screen and (max-width: 768px) {
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about-card h1 {
+    font-size: 28px;
+  }
+
+  .about-card p {
+    font-size: 16px;
+  }
+}
+
+
+
